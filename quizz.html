@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <head>
-   <meta charset="utf-8">
-   <title>QUIZZ</title>
-   <link rel="stylesheet" href="quizz.css">
+    <meta charset="utf-8">
+    <title>QUIZZ</title>
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="quizz.css">
 </head>
 <html>
-   <body>
-  
-   
-   <div class="carre" > 
-   
-   <div> 1/ Question 1 </div>
-<div>
-Oui  
-  <input type="checkbox" name="Oui" value="réponse1">
-</div>
-<div> 
-Non
-  <input type="checkbox" name="Non" value="réponse2">
-</div>
+    <body>
 
- <div>
- <button id="envoyer" class="tailleBouton">Envoyer</button>
- </div>
- </div>
- 
+        <div id="question-number" class="bold">Question 1 </div>
+        <div id="questionArea">
+            <p id="question-title">Ceci est-il une question?</p>
+            
+            <form name=answers class="italic">
+                <input type="radio" name=reponse value="1" checked>Oui<br/>
+                <input type="radio" name=reponse value="2">Non
+            </form>
 
+            <div id="btn-area">
+                <button id="envoyer" class="btn-answer">Valider</button>
+            </div>
+        </div>
 
-   </body>
-   <script src="quizz.js"></script>
+    </body>
+    <script src="quizz.js"></script>
 </html>
